@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deploy
+  labels:
+    app: nginx
+spec:
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-conatiner
+          image: achordia/nginx:latest
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: 250m
+              memory: 256Mi
+            requests:
+              cpu: 250m
+              memory: 256Mi
+          readinessProbe:
+            httpGet:
+              port: 80
+              path: /index.html
+          livenessProbe:
+            httpGet:
+              port: 80
+              path: /index.html
+      imagePullSecrets:
+        - name: regcred
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
