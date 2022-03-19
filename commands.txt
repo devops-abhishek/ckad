@@ -6,3 +6,6 @@
 #kubectl describe pod nginx-pod
 #kubectl delete pod nginx-pod
 #kubectl scale --replicas=3 replicaset nginx-rs
+
+Switch Context:
+#kubectl config set-context $(kubectl config current-context) --namespace=dev
