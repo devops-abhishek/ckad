@@ -1,0 +1,22 @@
+CKAD - Certified Kubernetes Application Developer
+
+Certification : CNCF (Cloud Native Computing Foundation) + The Linux Foundation
+Timing : 2 hrs
+Use "Candidate HandBook" for more details on Certification.
+
+Coupon - DEVOPS15
+
+NODE : is a phyical or virtual machine in which k8s  is installed.
+
+Master/Control Node - Managing/Orchestration the Cluster.
+    kube-apiserver
+    kube-scheduler
+    contoller-manager
+    etcd
+    kubelet
+    container runtime (docker, containerd, rkt, cri-o)
+Worker Node - Actual Load of applications.
+    kubelet
+    container runtime
+    kube-proxy
+Edge Node - For External Communication.

@@ -1,0 +1,5 @@
+#kubectl cluster-info
+#kubectl create secret docker-registry regcred --docker-server=https://index.docker.io/v1/ --docker-username=achordia --docker-password=One97@123 --docker-email=email.abhishekchordia@gmail.com
+#kubectl run nginx --image=nginx
+#kubectl get nodes
+#kubectl get pods -o wide --show-labels
