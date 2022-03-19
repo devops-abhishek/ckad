@@ -14,7 +14,7 @@ spec:
         httpGet:
           path: /index.html
           port: 80
-      readinessProbe:
+      readinessProb:
         httpGet:
           path: /index.html
           port: 80
