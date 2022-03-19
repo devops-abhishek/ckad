@@ -5,3 +5,4 @@
 #kubectl get pods -o wide --show-labels
 #kubectl describe pod nginx-pod
 #kubectl delete pod nginx-pod
+#kubectl scale --replicas=3 replicaset nginx-rs
