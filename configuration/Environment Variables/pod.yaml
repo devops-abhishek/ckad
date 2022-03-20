@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-sleeper
+spec:
+  containers:
+    - name: ubuntu-sleeper
+      image: ubuntu
+      command:
+        - "sleep"
+        - "100"
+      env:
+        - name: APP_COLOR
+          value: blue

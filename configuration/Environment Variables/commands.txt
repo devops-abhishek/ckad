@@ -1,0 +1,2 @@
+#docker run -e APP_COLOR=blue ubuntu sleep 50
+#kubectl exec ubuntu-sleeper -- printenv
