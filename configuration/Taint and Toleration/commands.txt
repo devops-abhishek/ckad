@@ -1,0 +1,9 @@
+Taint and Toleration - Pod to Node releationship
+Taint
+#kubectl taint nodes minikube color=red:NoSchedule
+Remove Taint
+kubectl taint nodes minikube color=red:NoSchedule-
+
+NoSchedule
+PreferNoSchedule
+NoExecute
