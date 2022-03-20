@@ -1,0 +1,10 @@
+Create Service Account :
+#kubectl create serviceaccount dashboard-sa
+When we create Service Account automatically a token is created using secret object.
+
+Every Namespace is having a default service account and secret created by default which is mounted on every pod object within the namespace
+If I want to modify that, then i need to update the pod yaml.
+Path : /var/run/secrets/kubernetes.io/serviceaccount
+            ca.crt
+            namespace
+            token

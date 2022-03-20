@@ -1,0 +1,7 @@
+Two tye of Accounts :
+    User Accounts
+        Admin
+        Developer
+    Service Accounts
+        Application Interaction
+        Automated Build Tool
