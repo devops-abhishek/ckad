@@ -1,0 +1,5 @@
+Label Node
+#kubectl label nodes minikube size=large
+
+remove Label from Node:
+#kubectl label nodes minikube size-
