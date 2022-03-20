@@ -9,3 +9,12 @@
 
 Switch Context:
 #kubectl config set-context $(kubectl config current-context) --namespace=dev
+
+Imperative Commands:
+Pod
+#kubectl run nginx --image=nginx --dry-run=client -o yaml
+Deployment
+#kubectl create deployment nginx --image=nginx --dry-run=client --replicas=2 -o yaml
+Service
+#kubectl expose pod redis --port=6379 --name redis-svc --dry-run=client -o yaml
+#kubectl expose pod nginx --port=80 --name nginx-svc --type=NodePort --dry-run=client -o yaml 
