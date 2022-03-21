@@ -1,0 +1,9 @@
+#kubectl apply -f deploy-definition.yaml --record
+#kubectl rollout status deployment/nginx-deploy
+#kubectl rollout history deployment/nginx-deploy
+#kubectl rollout history deployment/nginx-deploy --revision=1
+#kubectl set image deployment/nginx-deploy nginx-container=nginx:1.16.1 --record
+#kubectl rollout undo deployment/nginx-deploy
+#kubectl rollout undo deployment/nginx-deploy --to-revision=2
+#kubectl scale --replicas=3 deployment/nginx-deploy
+#kubectl autoscale deployment/nginx-deploy --min=3 --max=5 --cpu-percent=80

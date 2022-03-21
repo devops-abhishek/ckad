@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: expr-job
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    spec:
+      containers:
+        - name: ubuntu
+          image: ubuntu
+          command: ['expr', '3', '+', '5']
+      restartPolicy: Never
