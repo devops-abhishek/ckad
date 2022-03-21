@@ -1,0 +1,10 @@
+Pod Status
+    Pending
+    ContainerCreating
+    Running
+
+Pod Conditions
+    PodScheduled - True
+    Initialized - True
+    ContainerReady - True
+    Ready - True
