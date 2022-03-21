@@ -1,0 +1,25 @@
+Ingress Deploy (Ingress Controller)
+    nginx
+    haproxy
+    trafik
+    Istio
+    Contour
+    GCE
+
+Ingress Configure (Ingress Resources)
+    Set of Rules
+
+Namespace for NGINX Ingress Controller : ingress-nginx
+
+#minikube addons enable ingress
+#kubectl create deployment web --image=gcr.io/google-samples/hello-app:1.0
+#kubectl expose deployment web --port=8080 --type=NodePort
+#minikube service web --url
+#kubectl get ingress
+#kubectl create deployment web2 --image=gcr.io/google-samples/hello-app:2.0
+#kubectl expose deployment web2 --port=8080 --type=NodePort
+
+
+
+
+
