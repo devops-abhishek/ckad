@@ -1,0 +1,4 @@
+Multi-Container Pod patterns(Share same lifecycle - Network space & Storage volume) :
+    Ambassador - Properties configuration for backend apps.
+    Adaptor - Convert Logs to common pattern
+    Sidecar - Logging Agent
