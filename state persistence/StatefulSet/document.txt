@@ -1,0 +1,12 @@
+MySQL Master-Slave Concept:
+
+1.) Steup Master and then Slave
+2.) Clone data from the Master to Slave-01
+3.) Enable continous replication from Master to Slave-01
+4.) Wait Slave-01 to be ready
+5.) Clone data from the Slave-01 to Slave-02
+6.) Enable continous replication from Master to Slave-02
+7.) Configure Master Adress on Slave
+
+DNS Name for Pod using Headless Service
+pod-name.headless-svc-name.namespace.svc.cluster.local
