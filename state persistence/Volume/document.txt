@@ -1,0 +1,2 @@
+Docker :
+#docker run -v /tmp/test:/opt/test nginx
