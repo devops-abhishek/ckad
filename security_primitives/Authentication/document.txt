@@ -1,0 +1,5 @@
+Create Service Account :
+#kubectl create serviceaccount dashboard-sa
+
+And for Authorization :
+ClusterRole, ClusterRoleBinding, Role, RoleBinding

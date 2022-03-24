@@ -1,0 +1,12 @@
+file path : ./kube/config
+
+Clusters (Server URL and CA Cert)
+    Dev
+    Prod
+Contexts
+    Abhishek@Dev
+    Abhishek@Prod
+    Kartik@Dev
+Users (User Certificates)
+    Abhishek
+    Kartik

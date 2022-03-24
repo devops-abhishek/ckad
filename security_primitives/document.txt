@@ -1,0 +1,49 @@
+Security Primitives :
+    Password based Authentication disabled
+    SSH key Based Authentication
+
+Controlling kube-apiserver access :
+    Who Can access - Authentication
+        files - username and password
+        files - username and tokens
+        certificates
+        external authentication providers - ldap
+        service accounts
+
+    What can they do - Authorization
+        rbac authorization
+        abac authorization
+        node authorization
+            kubelet
+                Read
+                    Services
+                    Endpoints
+                    Nodes
+                    Pods
+                Write
+                    Node Status
+                    Pod Status
+                    Events
+        webhook modes
+            Outsource
+                Open Policy Agent
+        AlwaysAllow
+        AlwaysDeny
+
+
+TLS certificates
+    Is used by all components in k8s cluster.
+
+Pod-Pod communication restrication using Network Policy
+
+Verify the Permission (can-i) :
+#kubectl auth can-i create deployment
+#kubectl auth can-i delete node 
+#kubectl auth can-i create deployment --namespace test --as dev-user
+#kubectl auth can-i delete node --as dev-user
+
+List of Namespaced resources :
+#kubectl api-resources --namespaced=true
+
+List of Cluster Scoped resources:
+#kubectl api-resources --namespaced=false

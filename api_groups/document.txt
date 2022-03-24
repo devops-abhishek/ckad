@@ -1,0 +1,24 @@
+Core Group API
+    /api/v1
+        Namespace
+        Pods
+        ReplicationController
+        Event
+        Endpoints
+        Nodes
+        Binding
+        PersistentVolume
+        PersistentVolumeClaim
+        ConfigMap
+        Secret
+        Service
+Named Group API
+    /apis/v1
+        /apps
+        /extensions
+        /networking.k8s.io
+        /storage.k8s.io
+        /authentication.k8s.io
+        /certificates.k8s.io
+
+#kubectl api-resources 
